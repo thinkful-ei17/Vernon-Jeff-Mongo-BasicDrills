@@ -13,7 +13,7 @@ db.restaurants.find().sort({name: 1}).limit(10).pretty();
 var Id = db.restaurants.findOne({}, {_id: true})._id;
 db.restaurants.findOne({_id: Id});
 
-//Get by value 
+//Get by value
 
 db.restaurants.find({borough: "Queens"});
 
